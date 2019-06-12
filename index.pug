@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>Title</title>
+  <link type="image/png" href="images/adityalogo.png" rel="icon">
+  <!-- Bootstrap core CSS-->
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <script src="javascripts/jquery-1.11.1.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+   <!-- fontawsome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template-->
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="stylesheets/style-responsive.css" rel="stylesheet">
+  <!-- Data tables CSS-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery.dataTables.min.css">
+  <link href="stylesheets/dataTables.bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style1.css">
+  <script src="javascripts/scripts.js"></script>
+</head>
+<body>
+  <section id="container">
+    <!-- header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+      <!-- logo start--><a class="logo" href="#"><b><img src="images/myhub_logo.png" style="height:55px;width:100px;margin-top:-13px;"></b></a>
+      <!-- logo end-->
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- header end-->
+    <!-- sidebar start-->
+    <aside>
+      <div class="nav-collapse" id="sidebar">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="#"><img class="img-circle" src="images/user.png" width="80"></a></p>
+          <h5 class="centered">
+            <p>Project</p>
+          </h5>
+          <li class="active"><a data-toggle="tab" href="#dashboard"><i class="fa fa-tachometer"></i><span>Dashboard</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#notices"><i class="fa fa-bullhorn"></i><span>Notices</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#appliedstudents"><i class="fa fa-users"></i><span>Applied Students</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#interviewrounds"><i class="fa fa-graduation-cap"></i><span>Interview Rounds</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#placedstudents"><i class="fa fa-users"></i><span>Placed Students</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#studentprofile"><i class="fa fa-book"></i><span>Student Profile</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#admin"><i class="fa fa-lock"></i><span>Admin</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#companyadmin"><i class="fa fa-lock"></i><span>Company Admin</span></a></li>
+          <li class="sub-menu"><a data-toggle="tab" href="#calender"><i class="fa fa-calendar"></i><span>Calender</span></a></li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!-- sidebar end-->
+    <!-- main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="tab-content" >
+              <div class="tab-pane fade in active" id="dashboard">
+                <center>
+                  <div class="row dashboard-stats container">
+                    <div class="col-md-2 col-sm-6 col-md-offset-6">
+                      <section class="panel panel-box">
+                        <div class="panel-left panel-icon bg-lovender"><i class="fa fa-tachometer"></i></div>
+                        <div class="panel-right panel-icon bg-reverse">
+                          <p class="text-muted no-margin text"><span> </span></p>
+                          <p class="size-h1">Dashboard</p>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
+                  <center>
+                    <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <!-- code here -->
+                        </div>
+                      </div>
+                    </div>
+                  </center>
+                </center>
+              </div>
+              <div class="tab-pane fade align" id="notices">
+                <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                  <div class="row" style="height: 100px"></div>
+                    <div class="row" style="height: 200px;">
+                      <div class="col-md-6 col-md-offset-3">
+                        <span><i class="fa fa-hand-o-right" style="font-size: 70px"></i></span>
+                        <h1 style="margin-left: 160px">Latest News</h1>
+                      </div>
+                    </div>
+                    <div class="row" style="height: 200px">
+                      <div class="col-md-3">
+                      </div>
+                      <div class="col-md-6" style="height: 250px">
+                        <form>
+                          <label for="subject" style="margin-top:40px;font-size: 20px" class="col-md-4"><b>Description:</b></label>
+                          <textarea id="description" name="subject" style="height:80px" class="col-md-6"></textarea>
+                        <br><br><br><br><br><br><br>
+                        <label style="font-size: 20px" class="col-md-4"><b>Link:</b></label>
+                        <input type="url/" placeholder="enter Link" class="col-md-6"><br><br><br><br>
+                        <input type="submit" value="submit" class="btn btn-primary">
+                      </form>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade align" id="appliedstudents">
+                <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                  <div class="row">
+                    <div class="row0" style="background-color: #f2f2f2;height: 100px">   
+                    </div>
+                    <div class="col-md-12">
+                    <ul class="nav nav-tabs">
+                      <li><a data-toggle="tab" href="#activated">Activated</a></li>
+                      <li><a data-toggle="tab" href="#inprocess">In Process</a></li>
+                      <li><a data-toggle="tab" href="#completed">Completed</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade align" id="activated">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px">
+                      
+                    </div>
+                    <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Logo</th>
+                                 <th>Company Name</th>
+                                 <th>Location</th>
+                                 <th>Email</th>
+                                 <th>Status</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td><img src="stylesheets/images/infosys-logo.jpg" width="50px" height="50px"></td>
+                                 <td>Infosys</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/download.jpg" width="50px" height="50px"></td>
+                                 <td>TCS</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/google.jpg" width="50px" height="50px"></td>
+                                 <td>Google</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/wipro.jpg" width="50px" height="50px"></td>
+                                 <td>Wipro</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="images/T-Hub_logo.png" width="50px" height="50px"></td>
+                                 <td>THub</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/delloite.jpg" width="50px" height="50px"></td>
+                                 <td>Deloitte</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade align" id="inprocess">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px">   
+                    </div>
+                    <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Logo</th>
+                                 <th>Company Name</th>
+                                 <th>Location</th>
+                                 <th>Email</th>
+                                 <th>Status</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td><img src="stylesheets/images/infosys-logo.jpg" width="50px" height="50px"></td>
+                                 <td>Infosys</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/download.jpg" width="50px" height="50px"></td>
+                                 <td>TCS</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/google.jpg" width="50px" height="50px"></td>
+                                 <td>Google</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/wipro.jpg" width="50px" height="50px"></td>
+                                 <td>Wipro</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="images/T-Hub_logo.png" width="50px" height="50px"></td>
+                                 <td>THub</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/delloite.jpg" width="50px" height="50px"></td>
+                                 <td>Deloitte</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                    <div class="tab-pane fade align" id="completed">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px">
+                      
+                    </div>
+                    <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Logo</th>
+                                 <th>Company Name</th>
+                                 <th>Location</th>
+                                 <th>Email</th>
+                                 <th>Status</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td><img src="stylesheets/images/infosys-logo.jpg" width="50px" height="50px"></td>
+                                 <td>Infosys</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/download.jpg" width="50px" height="50px"></td>
+                                 <td>TCS</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/google.jpg" width="50px" height="50px"></td>
+                                 <td>Google</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/wipro.jpg" width="50px" height="50px"></td>
+                                 <td>Wipro</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="images/T-Hub_logo.png" width="50px" height="50px"></td>
+                                 <td>THub</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                             <tr>
+                                 <td><img src="stylesheets/images/delloite.jpg" width="50px" height="50px"></td>
+                                 <td>Deloitte</td>
+                                 <td>Surampalem</td>
+                                 <td>ashavelisetti@gmail.com</td>
+                                 <td><button class="btn btn-primary">Applicants</button></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              </div>
+              </div>
+
+              <div class="tab-pane fade align" id="interviewrounds">
+                <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                  <div class="row">
+                    <div class="row0" style="background-color: #f2f2f2;height: 100px">   
+                    </div>
+
+
+
+                    <div class="col-md-12">
+                    <ul class="nav nav-tabs">
+                      <li><a data-toggle="tab" href="#eligiblestudents">Eligible Students</a></li>
+                      <li><a data-toggle="tab" href="#aptitudetest">Aptitude Test</a></li>
+                      <li><a data-toggle="tab" href="#groupdiscussion">Group Discussion</a></li>
+                      <li><a data-toggle="tab" href="#technicalinterview">Technical Interview</a></li>
+                      <li><a data-toggle="tab" href="#hrinterview">HRinterview</a></li>
+                      <li><a data-toggle="tab" href="#selectedstudents">Selected Students</a></li>
+                    </ul>
+                    <div class="tab-content">
+                      <div class="tab-pane fade in active" id="eligiblestudents">
+                        <div class="row1" style="background-color: #f2f2f2;height: 40px"> 
+                        </div>
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Profile Pic</th>
+                                 <th>Name</th>
+                                 <th>Rollno</th>
+                                 <th>Percentage</th>
+                                 <th>Aptitude Test</th>
+                                 <th>Group Discussion</th>
+                                 <th>Technical Interview</th>
+                                 <th>HR Interview</th>
+                                 <th>Department</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                      </div>
+                  <div class="tab-pane fade align" id="aptitudetest">
+                     <div class="row1" style="background-color: #f2f2f2;height: 40px"> 
+                     </div>
+                      <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Profile Pic</th>
+                                 <th>Name</th>
+                                 <th>Rollno</th>
+                                 <th>Percentage</th>
+                                 <th>Aptitude Test</th>
+                                 <th>Group Discussion</th>
+                                 <th>Technical Interview</th>
+                                 <th>HR Interview</th>
+                                 <th>Department</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade align" id="groupdiscussion">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px"> 
+                    </div>
+                    <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Profile Pic</th>
+                                 <th>Name</th>
+                                 <th>Rollno</th>
+                                 <th>Percentage</th>
+                                 <th>Aptitude Test</th>
+                                 <th>Group Discussion</th>
+                                 <th>Technical Interview</th>
+                                 <th>HR Interview</th>
+                                 <th>Department</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade align" id="technicalinterview">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px"> 
+                    </div>
+                    <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Profile Pic</th>
+                                 <th>Name</th>
+                                 <th>Rollno</th>
+                                 <th>Percentage</th>
+                                 <th>Aptitude Test</th>
+                                 <th>Group Discussion</th>
+                                 <th>Technical Interview</th>
+                                 <th>HR Interview</th>
+                                 <th>Department</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade align" id="hrinterview">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px"> 
+                    </div>
+                    <div class="row2">
+                      <table class="display example"  style="width:100%">
+                         <thead>
+                             <tr>
+                                 <th>Profile Pic</th>
+                                 <th>Name</th>
+                                 <th>Rollno</th>
+                                 <th>Percentage</th>
+                                 <th>Aptitude Test</th>
+                                 <th>Group Discussion</th>
+                                 <th>Technical Interview</th>
+                                 <th>HR Interview</th>
+                                 <th>Department</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                             </tr>
+                         </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade align" id="selectedstudents">
+                    <div class="row1" style="background-color: #f2f2f2;height: 40px"> 
+                    </div>
+                    <div class="row2">
+
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+                   <div class="tab-pane fade" id="PlacedStudents">
+                    <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                      <ul class="nav nav-tabs">
+                            <li><a data-toggle="tab" href="#aec">AEC</a></li>
+                            <li><a data-toggle="tab" href="#acet">ACET</a></li>
+                            <li><a data-toggle="tab" href="#acoe">ACOE</a></li>
+                      </ul>
+                    </div><br><br>
+                    <div class="tab-content">
+                      <div class="tab-pane fade in active" id="aec">
+                        <table class="example display" style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Image</th>
+                              <th>Student Name</th>
+                              <th>Roll Number</th>
+                              <th>Email</th>
+                              <th>Mobile No</th>
+                              <th>Branch</th>
+                              <th>Year</th>
+                              <th>College</th>
+                              <th>Percentage</th>
+                              <th>Semister</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td> </td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                      </div>
+                      <div class="tab-pane fade" id="acet">
+                        <table class="example display" style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Image</th>
+                              <th>Student Name</th>
+                              <th>Roll Number</th>
+                              <th>Email</th>
+                              <th>Mobile No</th>
+                              <th>Branch</th>
+                              <th>Year</th>
+                              <th>College</th>
+                              <th>Percentage</th>
+                              <th>Semister</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td> </td>
+                              <td></td>
+                              <td> </td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="tab-pane fade" id="acoe">
+                        <table class="example display" style="width:100%">
+                          <thead>
+                            <tr>
+                              <th>Image</th>
+                              <th>Student Name</th>
+                              <th>Roll Number</th>
+                              <th>Email</th>
+                              <th>Mobile No</th>
+                              <th>Branch</th>
+                              <th>Year</th>
+                              <th>College</th>
+                              <th>Percentage</th>
+                              <th>Semister</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td></td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td> </td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td> </td>
+                              <td> </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                     
+                    </div>
+                
+              </div>
+                  <div class="tab-pane fade align" id="studentprofile">
+                  <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- code here -->
+                    </div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h1>Student Profile</h1>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+
+              <div class="tab-pane fade align" id="admin">
+                <div class="container" style="background-color:  #f2f2f2;width: 100%;height:100%;border-radius: 1px;">
+                  <div class="row" style="height:100px">
+                    <div class="col-md-12">
+                      
+                      <!-- code here -->
+                    </div>
+                  </div>
+                    <div class="row1" style="background-color:  #eaeaea;width: 100%;height:50%;border-radius: 1px;">
+                     <h3>Admin</h3>
+                      <ul class="nav nav-tabs">
+                       <li class="active"><a href="#">Add Students</a></li>
+                       <li><a href="#">Add Multiple Students</a></li>
+                      </ul>
+                    </div>
+                    <div class="row2" style="height:50px">
+                    <div class="col-md-12">
+                      
+                      <!-- code here -->
+                    </div>
+                  </div>
+                    <div class="container2" style="background-color: #eaeaea;width: 100%;height:70%;border-radius: 1px;">
+                      <h3>Add Student Details</h3><br><br>
+                      <div class="row3" style="background-color:  #f2f2f2;height: 30px">
+                        
+                      </div>
+                      <h4>Personal Profile</h4>
+                      <div class="row4">
+                        <form class="col-md-6 col-md-offset-3">
+                          <div class="form-group">
+                            <!-- <div class="input-group"> -->
+                              <label class="col-md-2" style="font-size:20px">Name:</label>
+                              <input type="text" placeholder="Student Name" class="form-control"> <br><br>
+                              <label class="col-md-2" style="font-size:20px">Rollno:</label>
+                              <input type="text"placeholder="Rollno" class="form-control" required=""> <br><br>
+                              <label class="col-md-2" style="font-size:20px">Email:</label>
+                              <input type="email" placeholder="Email ID" class="form-control" required=""> <br><br>
+                              <label class="col-md-2" style="font-size:20px">Department:</label>
+                              <select class="form-control">
+                                <option>--SELECT--</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="IT">IT</option>
+                                <option value="MECH">MECH</option>
+                                <option value="CIVIL">CIVIL</option>
+                                <option value="PT">PT</option>
+                                <option value="EEE">EEE</option>
+                                <option value="AGRICULTURE">AGRICULTURE</option>
+                                <option value="MINING">MINING</option>
+                              </select> <br><br>
+                              <label class="col-md-2" style="font-size:20px">College:</label>
+                              <select class="form-control">
+                                <option>--SELECT--</option>
+                                <option value="ACE">ACE</option>
+                                <option value="ACET">ACET</option>
+                                <option value="ACOE">ACOE<option>
+                              </select><br><br>
+                              <label class="col-md-2" style="font-size:20px">Mobile:</label>
+                              <input type="number" placeholder="Mobile Number" class="form-control" required=""><br><br>
+                              <label class="col-md-2" style="font-size:20px">Year:</label>
+                              <input type="year" placeholder="EX:2016-2020" class="form-control"><br><br>
+                          </div>
+                          <!-- </div> -->
+                                                 
+                        </form>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade align" id="companyadmin">
+                <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                  <h1>Add Logo</h1>
+                  <div class="container" style="background-color: #eaeaea;width:100%;height: 50%;border-radius:1px;">
+                    <div class="row">
+                      <div class="col-md-6">
+                       <h4 style="text-align: center">Upload Logo</h4> 
+                      </div>
+                    </div>
+                  </div><br><br>
+                  <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="form-group">
+                        <label>Logo:</label>
+                        <input type="file" class="form-control"><br>
+                        <label>Company:</label>
+                        <input type="text" placeholder="name of the comapany" class="form-control"><br>
+                        <label>Email:</label>
+                        <input type="email" placeholder="enter Email" class="form-control"><br>
+                        <label>From:</label>
+                        <input type="date" placeholder="dd-mm-yyyy" class="form-control"><br>
+                        <label>To:</label>
+                        <input type="date" placeholder="dd-mm-yyyy" class="form-control"><br>
+                        <input type="submit" value="submit" class="btn btn-primary">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="tab-pane fade align" id="calender">
+                <div class="container" style="background-color: #eaeaea;width: 100%;height:100%;border-radius: 1px;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <!-- code here -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+  </section>
+  <!-- MAIN CONTENT-->
+  <!-- main content end-->
+  <!-- js placed at the end of the document so the pages load faster-->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="javascripts/jquery.ui.touch-punch.min.js"></script>
+  <script src="javascripts/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="javascripts/jquery.scrollTo.min.js"></script>
+  <script src="javascripts/jquery.nicescroll.js"></script>
+  <!-- common script for all pages-->
+  <script src="javascripts/common-scripts.js"></script>
+  <script src="javascripts/jquery.dataTables.min.js"></script>
+  <script src="javascripts/dataTables.buttons.min.js"></script>
+  <script src="javascripts/buttons.flash.min.js"></script>
+  <script src="javascripts/jszip.min.js"></script>
+  <script src="javascripts/pdfmake.min.js"></script>
+  <script src="javascripts/vfs_fonts.js"></script>
+  <script src="javascripts/buttons.html5.min.js"></script>
+  <script src="javascripts/buttons.print.min.js"></script>
+<!-- datatables scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
+</body>
+</html>
